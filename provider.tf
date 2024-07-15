@@ -18,5 +18,6 @@ terraform {
 
 provider "ibm" {
   # Configuration options
+  ibmcloud_api_key = "${var.ibmcloud_api_key}"
 }
 
