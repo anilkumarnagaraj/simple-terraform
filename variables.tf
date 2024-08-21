@@ -33,4 +33,4 @@ variable "IC_SCHEMATICS_WORKSPACE_ID" {
   description = "leave blank if running locally. This variable will be automatically populated if running from an IBM Cloud Schematics workspace"
 }
 
-/*
+*/
