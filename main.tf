@@ -1,17 +1,22 @@
 
+data "ibm_is_images" "ds_images" {
+}
+
+/*
+
 data "ibm_resource_group" "group" {
   name = "Default"
 }
 
-/*data "ibm_schematics_workspace" "schematics_workspace" {
+data "ibm_schematics_workspace" "schematics_workspace" {
     workspace_id = var.workspace_id
-}*/
+}
 
 /*resource "ibm_cd_toolchain" "cd_toolchain_instance" {
   description = "A sample toolchain to test the API"
   name = "TestToolchainV2"
   resource_group_id = "${data.ibm_resource_group.group.id}"
-}*/
+}
 
 resource "ibm_is_vpc" "vpc" {
   name           = "${var.vpc_name}"
@@ -26,11 +31,11 @@ resource "ibm_is_vpc" "vpc1" {
   tags = ["tag1","tag2"]
 }
 
-/*resource "ibm_resource_group" "grp" {
+resource "ibm_resource_group" "grp" {
   name           = "mygrp-today"
-}*/
+}
 
-/*locals {
+locals {
 email_stss = ["tanya.shanker@ibm.com"]
 }
 
@@ -66,7 +71,7 @@ data "ibm_is_subnet" "subnet" {
   count = 5
   name = "subnet-2fb2" 
   depends_on = [data.ibm_is_vpc.vpc[0]]
-}*/
+}
 
 resource "ibm_resource_key" "resourceKey" {
   name                 = "test"
@@ -78,3 +83,4 @@ resource "ibm_resource_key" "resourceKey" {
     delete = "15m"
   }
 }
+*/
