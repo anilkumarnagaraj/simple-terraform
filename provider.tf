@@ -18,6 +18,6 @@ terraform {
 
 provider "ibm" {
   # Configuration option
-  visibility="private"
+  #visibility="private"
 }
 
